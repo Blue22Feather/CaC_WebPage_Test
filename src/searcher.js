@@ -413,4 +413,4 @@ function cleanAll () {
     objectsID["codePromo"].value = "";
 }
 
-/* alert("Esta vez no olvides mi nombre, esta junto con mi correo en la esquina inferior izquierda ;D"); */
+alert("Esta vez no olvides mi nombre, esta junto con mi correo en la esquina inferior izquierda, por si acaso: El creador de este documento es 'Miguel Diaz' ;D");
