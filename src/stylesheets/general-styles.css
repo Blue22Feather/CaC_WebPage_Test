@@ -1,0 +1,75 @@
+:root {
+    --global-nav-background-color: #1e0c1b;
+    --global-nav-link-color: #ffc500;
+    --global-nav-link-color-fadeout: rgba(255,197,0,.3);
+    --global-nav-icon-background-color: rgba(89,83,88,.5);
+    --global-nav-icon-background-color-active: #595358;
+    --global-nav-icon-border-color-hover: hsla(0,0%,100%,.5);
+    --global-text-color: #DADADA;
+    --body-background-color: #362b26;
+    --body-background-image: url('../../resources/imgs/Fruit-Background.jpg');
+    --dropdown-background-color: #291927;
+    --dropdown-border-color: #595358;
+    --dropdown-page-background-color: #5b514c;
+    --dropdown-page-background-color--rgb: 91,81,76;
+    --dropdown-page-border-color: #685f5b;
+    --avatar-background-color: transparent;
+    --avatar-border-color: #f5f3f5;
+    --page-background-color: #3e322c;
+    --page-background-color--rgb: 62,50,44;
+    --page-border-color: #685f5b;
+    --box-text-background--url: url("../../resources/imgs/Box-Background-1.jpg");
+    --box-text-border--url: url("../../resources/imgs/Box-draw.webp");
+    --box-border-color: #3e2215;
+}
+
+div, nav, header, main {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-size: 14px;
+    line-height: 1.75;
+    font-family: helvetica,arial,sans-serif;
+}
+
+a {
+    line-height: inherit;
+    text-decoration: none
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+* {
+    border: 0;
+    font: normal normal normal 100% inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+hr {
+    border: 1px solid var(--box-border-color);
+    margin: 10px 0;
+}
+
+.specialText-New:hover {
+    transform: translate(-2px,-2px);
+}

@@ -1,83 +1,3 @@
-:root {
-    --global-nav-background-color: #1e0c1b;
-    --global-nav-link-color: #ffc500;
-    --global-nav-link-color-fadeout: rgba(255,197,0,.3);
-    --global-nav-icon-background-color: rgba(89,83,88,.5);
-    --global-nav-icon-background-color-active: #595358;
-    --global-nav-icon-border-color-hover: hsla(0,0%,100%,.5);
-    --global-text-color: #DADADA;
-    --body-background-color: #362b26;
-    --body-background-image: url('../assets/img/Fruit-Background.jpg');
-    --dropdown-background-color: #291927;
-    --dropdown-border-color: #595358;
-    --dropdown-page-background-color: #5b514c;
-    --dropdown-page-background-color--rgb: 91,81,76;
-    --dropdown-page-border-color: #685f5b;
-    --avatar-background-color: transparent;
-    --avatar-border-color: #f5f3f5;
-    --page-background-color: #3e322c;
-    --page-background-color--rgb: 62,50,44;
-    --page-border-color: #685f5b;
-    --box-text-background--url: url("./img/Box-Background-1.jpg");
-    --box-text-border--url: url("./img/Box-draw.webp");
-}
-
-/*/ Zona General /*/
-
-div, nav, header, main {
-    display: block;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--body-background-color);
-    font-size: 14px;
-    line-height: 1.75;
-    font-family: helvetica,arial,sans-serif;
-}
-
-a {
-    line-height: inherit;
-    text-decoration: none
-}
-
-*, :after, :before {
-    box-sizing: inherit;
-}
-
-* {
-    border: 0;
-    font: normal normal normal 100% inherit;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-
 /*/ PANEL DE NAVEGACION /*/
 
 .icon {
@@ -167,7 +87,6 @@ hr {
     transition-duration: .3s;
     transition-property: background-color,border-color;
     width: 40px;
-
 }
 
 
@@ -823,7 +742,7 @@ hr {
 .box {
     background: rgba(var(--dropdown-page-background-color--rgb),0.5);
     border-radius: 0.2em;
-    border: 2px solid #3e2215;
+    border: 2px solid var(--box-border-color);
     padding: 3px;
     margin: auto;
     color: #fff;
@@ -971,51 +890,6 @@ hr {
     color: #fff;
     min-width: 500px;
     min-height: 250px;
-}
-
-/*/ formularios tema 1 /*/
-
-.form-box {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--global-text-color);
-    background-color: var(--page-background-color);
-    background-clip: padding-box;
-    border: 1px solid var(--page-border-color);
-    margin: 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.form-button {
-    background: var(--global-nav-link-color);
-    color: var(--global-text-color);
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    border-radius: 0.3rem;
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid var(--page-border-color);
-    margin: 10px;
-    width: 100%;
-}
-
-.form-button:hover, .form-button:active {
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    transform: translate(1px,1px);
-    background-color: orange;
 }
 
 .page-footer__content {
@@ -1234,4 +1108,60 @@ hr {
     margin: -2px 0 0;
     width: 100%;
     justify-content: center;
+}
+
+.box hr {
+    margin: 10px
+}
+
+/* ---- NUEVA IMPLEMENTACION ---- */
+
+.FormBox {
+    & {
+        margin: 15px;
+    }
+    & input:focus, & input:focus-visible, & textarea:focus, & textarea:focus-visible {
+        outline: 2px solid var(--global-nav-link-color);
+        box-shadow: 8px rgba(var(--global-nav-link-color-fadeout),0.5);
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    & input, & textarea {
+        color: var(--global-text-color);
+        background-color: var(--page-background-color);
+        border: 1px solid var(--page-border-color);
+        padding-left: 15px;
+    }
+    & input, & button, & textarea {
+        height: 50px;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: 16px;
+    }
+    & textarea {
+        padding-top: 15px;
+        height: 150px;
+    }
+    & button {
+        background-color: var(--global-nav-link-color);
+        font-size: 18px;
+        color: black;
+    }
+    & button:hover {
+        background-color: green;
+        outline: 4px solid var(--global-nav-link-color);
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.FormBox__container-double {
+    display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    column-gap: 30px;
+}
+.FormBox__container {
+    display: grid;
+    grid-template-columns: calc(100% - 60);
 }

@@ -5,90 +5,60 @@
     <head>
         <meta charset="UTF-8">
         <title> Gourmet! | Recetario en la nube </title>
-        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/CaC-icon.ico" />
-        <link rel="stylesheet" href="assets/styles.css">
-        <link rel="icons" href="assets/Hurtado-IconSet-1.svg">
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("gallerybox");
-            let dots = document.getElementsByClassName("slider__nav-button");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/icons/CaC-icon.ico" />
+        <link rel="stylesheet" href="./src/stylesheets/styles.css">
+        <link rel="stylesheet" href="./src/stylesheets/general-styles.css">        
     </head>
     <body>
         <div class="global-navigation">
             <div class="global-navigation__top">
                 <nav class="global-navigation__nav" aria-label="Navegación en el sitio">
-                    <a href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" class="global-navigation__logo" label="logo" aria-label="Aulas virtuales del curso">
-                        <img src="./assets/img/CaC-logo.png" width="60px" height="28px">
+                    <a target="_blank" rel="noopener noreferrer" href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" class="global-navigation__logo" label="logo" aria-label="Aulas virtuales del curso">
+                        <img src="./resources/imgs/CaC-logo.png" width="60px" height="28px">
                         <span> « CaC » </span>
                     </a>
                     <a href="" class="global-navigation__icon" title="Buscar">
                         <svg class="icon">
-                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-magnifying-glass" />
+                            <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-magnifying-glass" />
                         </svg>
                     </a>
                     <div class="global-navigation__links">
-                        <a href="https://meet.google.com/woh-kgvq-ftc" class="global-navigation__link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://meet.google.com/woh-kgvq-ftc" class="global-navigation__link">
                             <span class="global-navigation__icon has-background">
                                 <svg class="icon">
-                                    <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-g-meet"/>
+                                    <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-g-meet"/>
                                 </svg>
                             </span>
                             <span class="global-navigation__label">Curso</span>
                         </a>
-                        <a href="https://drive.google.com/drive/folders/1Iv_z7TY5NEblnPsQuxQBK_PQ0OjvVq_E" class="global-navigation__link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1Iv_z7TY5NEblnPsQuxQBK_PQ0OjvVq_E" class="global-navigation__link">
                             <span class="global-navigation__icon has-background">
                                 <svg class="icon">
-                                    <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-g-drive"/>
+                                    <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-g-drive"/>
                                 </svg>
                             </span>
                             <span class="global-navigation__label">Recursos</span>
                         </a>
-                        <a href="https://www.youtube.com/playlist?list=PLMBLJyhQOSWxHBYa2Nyki0bGPK4hb3J2g" class="global-navigation__link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLMBLJyhQOSWxHBYa2Nyki0bGPK4hb3J2g" class="global-navigation__link">
                             <span class="global-navigation__icon has-background">
                                 <svg class="icon">
-                                    <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-tele"/>
+                                    <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-tele"/>
                                 </svg>
                             </span>
                             <span class="global-navigation__label">Playlist de Youtube</span>
                         </a>
-                        <a href="https://www.facebook.com/codoacodooficial/" class="global-navigation__link" label="Facebook Oficil">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/codoacodooficial/" class="global-navigation__link" label="Facebook Oficil">
                             <span class="global-navigation__icon has-background">
                                 <svg class="icon">
-                                    <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-facebook" />
+                                    <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-facebook" />
                                 </svg>
                             </span>
                             <span class="global-navigation__label">Redes Sociales</span>
                         </a>
-                        <a href="https://aulasvirtuales.bue.edu.ar/my/" class="global-navigation__link" label="Aulas Virtuales">
+                        <a target="_blank" rel="noopener noreferrer" href="https://aulasvirtuales.bue.edu.ar/my/" class="global-navigation__link" label="Aulas Virtuales">
                             <span class="global-navigation__icon has-background">
                                 <svg class="icon">
-                                    <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-bookyy" />
+                                    <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-bookyy" />
                                 </svg>
                             </span>
                             <span class="global-navigation__label">Aulas Virtuales</span>
@@ -100,7 +70,7 @@
                 <div id="notifications">
                    <div class="global-navigation__icon">
                         <svg class="icon" color="var(--global-text-color)">
-                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-bell" />
+                            <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-bell" />
                         </svg>
                    </div>
                 </div>
@@ -108,7 +78,7 @@
                     <div class="dropdown__toggle">
                         <div class="global-navigation__icon">
                             <div class="avatar">
-                                <img src="./assets/img/avatar_alumn.jpg" title="Alumno" class="avatar__imag">
+                                <img src="./resources/imgs/avatar_alumn.jpg" title="Alumno" class="avatar__imag">
                             </div>
                         </div>
                     </div>
@@ -140,7 +110,7 @@
                 <div class="header-wrapper">
                     <header class="community-header">
                         <a href="./index.html" class="community-header__image">
-                            <img src="./assets/img/Logo-Management-Gourmet.png" width="115" height="65" alt="Gourmet Page">
+                            <img src="./resources/imgs/Logo-Management-Gourmet.png" width="115" height="65" alt="Gourmet Page">
                         </a>
                         <div class="community-header__top-container">
                             <div class="community-header__name-wrapper">
@@ -153,41 +123,14 @@
                         </div>
                         <nav class="community-header__local-navigation">
                             <ul class="tabs">
-                                <li id="tab_1" class="dropdown explore-menu">
+                                <li id="tab_1" class="specialText-New">
                                     <div class="tabs__tab-label dropdown__toggle">
-                                        <a href="#">
+                                        <a target="_blank" rel="noopener noreferrer" href="./views/rent_events.html">
                                             <svg class="icon-tiny icon">
-                                                <use href="./assets/Hurtado-IconSet-1.svg#wds-icons-book-tiny" />
+                                                <use href="../resources/Hurtado-IconSet-1.svg#wds-icons-book-tiny" />
                                             </svg>
-                                            <span>Explora</span>
+                                            <span style="color: var(--global-nav-link-color);">Rentar para eventos</span>
                                         </a>
-                                        <svg class="icon icon-tiny dropdown__toggle-chevron">
-                                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
-                                        </svg>
-                                    </div>
-                                    <div class="is-not-scrollable dropdown__content">
-                                        <ul class="list is-linked">
-                                            <li>
-                                                <a href="#">
-                                                    <span>item :D</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span>item :D</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span>item :D</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span>item :D</span>
-                                                </a>
-                                            </li>                                                                                                                                    
-                                        </ul>
                                     </div>
                                 </li>
                                 <li id="tab_2" class="dropdown">
@@ -196,28 +139,28 @@
                                             <span>Alimentos y Nutricion</span>
                                         </a>
                                         <svg class="icon icon-tiny dropdown__toggle-chevron">
-                                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                            <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
                                         </svg>
                                     </div>
                                     <div class="is-not-scrollable dropdown__content">
                                         <ul class="list is-linked">
                                             <li>
-                                                <a href="https://www.unicef.org/lac/crianza/alimento-y-nutricion">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.unicef.org/lac/crianza/alimento-y-nutricion">
                                                     <span>Recursos de 'UNICEF'</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://medlineplus.gov/spanish/foodandnutrition.html">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://medlineplus.gov/spanish/foodandnutrition.html">
                                                     <span>Recursos de 'MedLine Plus'</span>
                                                 </a>
                                             </li> 
                                             <li>
-                                                <a href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/alimentacion-nutricion">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/alimentacion-nutricion">
                                                     <span>Recursos del 'NIH'</span>
                                                 </a>
                                             </li>    
                                             <li>
-                                                <a href="https://www.argentina.gob.ar/salud/alimentacion-saludable">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/salud/alimentacion-saludable">
                                                     <span>Recursos del Minisiterio de Salud de Argentina</span>
                                                 </a>
                                             </li>                                                                                                                                     
@@ -230,23 +173,23 @@
                                             <span>Alimentos y Ejercicio</span>
                                         </a>
                                         <svg class="icon icon-tiny dropdown__toggle-chevron">
-                                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                            <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
                                         </svg>
                                     </div>
                                     <div class="is-not-scrollable dropdown__content">
                                         <ul class="list is-linked">
                                             <li>
-                                                <a href="https://dietas.guiafitness.com/">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://dietas.guiafitness.com/">
                                                     <span>Guia Fitness</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://www.entrenamiento.com/">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.entrenamiento.com/">
                                                     <span>Entrenamientos variados</span>
                                                 </a>
                                             </li>  
                                             <li>
-                                                <a href="https://instafit.com/">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://instafit.com/">
                                                     <span>Disciplinas Atleticas</span>
                                                 </a>
                                             </li>                                                                                       
@@ -259,23 +202,23 @@
                                             <span>Alimentos y Salud</span>
                                         </a>
                                         <svg class="icon icon-tiny dropdown__toggle-chevron">
-                                            <use xlink:href="./assets/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                            <use xlink:href="./resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
                                         </svg>
                                     </div>
                                     <div class="is-not-scrollable dropdown__content">
                                         <ul class="list is-linked">
                                             <li>
-                                                <a href="https://www.midietacojea.com/">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.midietacojea.com/">
                                                     <span>Blog de dietas y nutricion</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://adelgazarysalud.online/">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://adelgazarysalud.online/">
                                                     <span>Blog de salud y alimentacion</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="https://estilosdevidasaludable.sanidad.gob.es/alimentacionSaludable/home.htm">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://estilosdevidasaludable.sanidad.gob.es/alimentacionSaludable/home.htm">
                                                     <span>Blog de estilos de vida</span>
                                                 </a>
                                             </li>                                                                                                                                  
@@ -306,30 +249,30 @@
                                             <p>
                                                 <a class="slider__controls-prev" onclick="plusSlides(-1)">
                                                     <svg class="icon icon-tiny">
-                                                        <use href="./assets/Hurtado-IconSet-1.svg#wds-icons-arrow-tiny" />
+                                                        <use href="./resources/Hurtado-IconSet-1.svg#wds-icons-arrow-tiny" />
                                                     </svg>
                                                 </a>
                                             </p>
                                             <p>
                                                 <a class="slider__controls-next" onclick="plusSlides(1)">
                                                     <svg class="icon icon-tiny">
-                                                        <use href="./assets/Hurtado-IconSet-1.svg#wds-icons-arrow-tiny" />
+                                                        <use href="./resources/Hurtado-IconSet-1.svg#wds-icons-arrow-tiny" />
                                                     </svg>
                                                 </a>
                                             </p>
                                         </div>
                                         <div class="slider__list">
                                             <div class="gallerybox fade" data-index="0" style="width: 670px;">
-                                                <img src="./assets/img/Chefsito-wallpaper-1.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
+                                                <img src="./resources/imgs/Chefsito-wallpaper-1.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
                                             </div>
                                             <div class="gallerybox fade" data-index="1" style="width: 670px;">
-                                                <img src="./assets/img/Chefsito-wallpaper-2.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
+                                                <img src="./resources/imgs/Chefsito-wallpaper-2.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
                                             </div>
                                             <div class="gallerybox fade" data-index="2" style="width: 670px;">
-                                                <img src="./assets/img/Chefsito-wallpaper-3.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
+                                                <img src="./resources/imgs/Chefsito-wallpaper-3.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
                                             </div>
                                             <div class="gallerybox fade" data-index="3" style="width: 670px;">
-                                                <img src="./assets/img/Chefsito-wallpaper-4.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
+                                                <img src="./resources/imgs/Chefsito-wallpaper-4.jpg" decoding="async" loading="lazy" width="670" height="360" data-relevant="1">
                                             </div>                                                                                        
                                         </div>
                                         <div class="slider__nav">
@@ -362,67 +305,67 @@
                                     </div>
                                     <div class="PerBox">
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante1.jpg" title="Plato 1" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante1.jpg" title="Plato 1" class="article-thumb__img"></a>
                                         </div>
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante2.jpg" title="Plato 2" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante2.jpg" title="Plato 2" class="article-thumb__img"></a>
                                         </div>    
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante3.jpg" title="Plato 3" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante3.jpg" title="Plato 3" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante4.jpg" title="Plato 4" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante4.jpg" title="Plato 4" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante5.jpg" title="Plato 5" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante5.jpg" title="Plato 5" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante6.jpg" title="Plato 6" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante6.jpg" title="Plato 6" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante7.jpg" title="Plato 7" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante7.jpg" title="Plato 7" class="article-thumb__img"></a>
                                         </div> 
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante8.jpg" title="Plato 8" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante8.jpg" title="Plato 8" class="article-thumb__img"></a>
                                         </div> 
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante9.jpg" title="Plato 9" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante9.jpg" title="Plato 9" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante10.jpg" title="Plato 10" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante10.jpg" title="Plato 10" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante11.jpg" title="Plato 11" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante11.jpg" title="Plato 11" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante12.jpg" title="Plato 12" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante12.jpg" title="Plato 12" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante13.jpg" title="Plato 13" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante13.jpg" title="Plato 13" class="article-thumb__img"></a>
                                         </div>          
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante14.jpg" title="Plato 14" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante14.jpg" title="Plato 14" class="article-thumb__img"></a>
                                         </div>                                       
                                         
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante15.jpg" title="Plato 15" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante15.jpg" title="Plato 15" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a class="hidden" href="http://piegari.com.ar/"><img src="./assets/img/Piegari/ristorante16.jpg" title="Plato 16" class="article-thumb__img"></a>
+                                            <a class="hidden" target="_blank" rel="noopener noreferrer" href="http://piegari.com.ar/"><img src="./resources/imgs/Piegari/ristorante16.jpg" title="Plato 16" class="article-thumb__img"></a>
                                         </div>                                        
                                     </div>
                                 </div>   
@@ -435,67 +378,67 @@
                                     </div>
                                     <div class="PerBox">
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/flan-casero-clasico/13997"><img src="./assets/img/Paulina_Cocina/recipe1.jpg" title="Flan casero clasico" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/flan-casero-clasico/13997"><img src="./resources/imgs/Paulina_Cocina/recipe1.jpg" title="Flan casero clasico" class="article-thumb__img"></a>
                                         </div>
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/galletas-de-avena-faciles/7942"><img src="./assets/img/Paulina_Cocina/recipe2.jpg" title="Galletas de avena" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/galletas-de-avena-faciles/7942"><img src="./resources/imgs/Paulina_Cocina/recipe2.jpg" title="Galletas de avena" class="article-thumb__img"></a>
                                         </div>    
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/mochi-japones/32762"><img src="./assets/img/Paulina_Cocina/recipe3.jpg" title="Mochi japones" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/mochi-japones/32762"><img src="./resources/imgs/Paulina_Cocina/recipe3.jpg" title="Mochi japones" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/natillas-caseras-tradicionales/32595"><img src="./assets/img/Paulina_Cocina/recipe4.jpg" title="Natilla casera" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/natillas-caseras-tradicionales/32595"><img src="./resources/imgs/Paulina_Cocina/recipe4.jpg" title="Natilla casera" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/tocino-de-cielo/32402"><img src="./assets/img/Paulina_Cocina/recipe5.jpg" title="Tocino de cielo" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tocino-de-cielo/32402"><img src="./resources/imgs/Paulina_Cocina/recipe5.jpg" title="Tocino de cielo" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/milhojas-de-crema-pastelera/32070"><img src="./assets/img/Paulina_Cocina/recipe6.jpg" title="Milhojas de crema pastelera" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/milhojas-de-crema-pastelera/32070"><img src="./resources/imgs/Paulina_Cocina/recipe6.jpg" title="Milhojas de crema pastelera" class="article-thumb__img"></a>
                                         </div>   
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/tarta-san-marcos/32112"><img src="./assets/img/Paulina_Cocina/recipe7.jpg" title="Tarta 'San Marcos'" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tarta-san-marcos/32112"><img src="./resources/imgs/Paulina_Cocina/recipe7.jpg" title="Tarta 'San Marcos'" class="article-thumb__img"></a>
                                         </div> 
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/dulce-de-membrillo/31919"><img src="./assets/img/Paulina_Cocina/recipe8.jpg" title="Dulce de membrillo" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/dulce-de-membrillo/31919"><img src="./resources/imgs/Paulina_Cocina/recipe8.jpg" title="Dulce de membrillo" class="article-thumb__img"></a>
                                         </div> 
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/banana-bread/31680"><img src="./assets/img/Paulina_Cocina/recipe9.jpg" title="Pan de banana" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/banana-bread/31680"><img src="./resources/imgs/Paulina_Cocina/recipe9.jpg" title="Pan de banana" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/bunuelos-mexicanos-caseros/31492"><img src="./assets/img/Paulina_Cocina/recipe10.jpg" title="Buñuelos Mexicanos" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/bunuelos-mexicanos-caseros/31492"><img src="./resources/imgs/Paulina_Cocina/recipe10.jpg" title="Buñuelos Mexicanos" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/gelatina-de-mosaico/31074"><img src="./assets/img/Paulina_Cocina/recipe11.jpg" title="Gelatina de mosaico" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/gelatina-de-mosaico/31074"><img src="./resources/imgs/Paulina_Cocina/recipe11.jpg" title="Gelatina de mosaico" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/ensalada-de-manzana/31068"><img src="./assets/img/Paulina_Cocina/recipe12.jpg" title="Ensalada de manzana" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/ensalada-de-manzana/31068"><img src="./resources/imgs/Paulina_Cocina/recipe12.jpg" title="Ensalada de manzana" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/bombon-suizo-torta-receta-facil/30984"><img src="./assets/img/Paulina_Cocina/recipe13.jpg" title="Bombon Suizo" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/bombon-suizo-torta-receta-facil/30984"><img src="./resources/imgs/Paulina_Cocina/recipe13.jpg" title="Bombon Suizo" class="article-thumb__img"></a>
                                         </div>          
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/receta-flan-de-queso-philadelphia-horno/30851"><img src="./assets/img/Paulina_Cocina/recipe14.jpg" title="Flan de queso" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/receta-flan-de-queso-philadelphia-horno/30851"><img src="./resources/imgs/Paulina_Cocina/recipe14.jpg" title="Flan de queso" class="article-thumb__img"></a>
                                         </div>                                       
                                         
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/tarta-de-queso-sin-horno/30751"><img src="./assets/img/Paulina_Cocina/recipe15.jpg" title="Tarta de queso" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tarta-de-queso-sin-horno/30751"><img src="./resources/imgs/Paulina_Cocina/recipe15.jpg" title="Tarta de queso" class="article-thumb__img"></a>
                                         </div>                                        
 
                                         <div class="article-thumb">
-                                            <a href="https://www.paulinacocina.net/pan-brioche-super-esponjoso/30306"><img src="./assets/img/Paulina_Cocina/recipe16.jpg" title="Pan 'Brioche'" class="article-thumb__img"></a>
+                                            <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/pan-brioche-super-esponjoso/30306"><img src="./resources/imgs/Paulina_Cocina/recipe16.jpg" title="Pan 'Brioche'" class="article-thumb__img"></a>
                                         </div>                                        
                                     </div>
                                 </div> 
@@ -507,8 +450,8 @@
                                         <span class="box-text">Receta del dia</span>
                                     </div>
                                     <div class="article-content__thumb">
-                                        <a class="page-header__title" href="https://www.paulinacocina.net/tortitas-de-avena-y-platano/32363">Tortitas de avena y plátano</a>
-                                        <a href="https://www.paulinacocina.net/tortitas-de-avena-y-platano/32363"><img class="special-image" src="./assets/img/Paulina_Cocina/Day-Recipe.jpg"></a>
+                                        <a target="_blank" rel="noopener noreferrer" class="page-header__title" href="https://www.paulinacocina.net/tortitas-de-avena-y-platano/32363">Tortitas de avena y plátano</a>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tortitas-de-avena-y-platano/32363"><img class="special-image" src="./resources/imgs/Paulina_Cocina/Day-Recipe.jpg"></a>
                                     </div>
                                     <div class="box-content__text">
                                         <p>¡Buenos días y arriba! Que hoy les traemos la mejor opción de desayuno para empezar el día con todo. <strong>Dulces, esponjosas y super adaptables</strong> a los gustos, las<strong> tortitas de avena y plátano</strong> son una receta para hacer y compartir con amigos.</p>
@@ -524,8 +467,8 @@
                                         <span class="box-text">Receta del mes</span>
                                     </div>
                                     <div class="article-content__thumb">
-                                        <a class="page-header__title" href="https://www.recetasderechupete.com/tarta-de-chocolate-de-jack-skellington-postre-especial-halloween/50870/">Postre especial Halloween</a>
-                                        <a href="https://www.recetasderechupete.com/tarta-de-chocolate-de-jack-skellington-postre-especial-halloween/50870/"><img class="special-image" src="./assets/img/month-recipe.webp"></a>
+                                        <a target="_blank" rel="noopener noreferrer" class="page-header__title" href="https://www.recetasderechupete.com/tarta-de-chocolate-de-jack-skellington-postre-especial-halloween/50870/">Postre especial Halloween</a>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.recetasderechupete.com/tarta-de-chocolate-de-jack-skellington-postre-especial-halloween/50870/"><img class="special-image" src="./resources/imgs/month-recipe.webp"></a>
                                     </div>
                                     <div class="box-content__text">
                                         <p><strong><a class="box-content__link" href="https://www.recetasderechupete.com/las-recetas-de-halloween-mas-terrorificas/14088/">Halloween</a></strong> está a la vuelta de la esquina y venimos con una nueva sugerencia dulce que puede ser el broche de oro de vuestra celebración y la solución perfecta sí se os ha echado el tiempo encima y no disponéis más que de 60 minutos. Porque esto es lo que se tarda en tener lista la <strong>tarta de chocolate de Jack Skellington</strong>.</p>
@@ -590,25 +533,17 @@
                     <div>
                         <h2 class="page-header__title" style="text-align: center; margin: 10px;">Suscripcion</h2>
                         <p style="text-align: center;color: var(--global-text-color);margin: 10px;">¡Suscribete para recibir recetas nuevas directamente a tu buzon!</p>
-                        <form action>
-                            <div class="page-footer__content page-footer__content-double">
-                                <div>
-                                    <input type="text" class="form-box" placeholder="Nombre" aria-label="Nombre" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="form-box" placeholder="Apellido" aria-label="Apellido" required>
-                                </div>
+                        <form class="FormBox" action>
+                            <div class="FormBox__container-double">
+                                <input id="suscripcionName" type="text" placeholder="Nombre" aria-label="Nombre" required>
+                                <input id="suscripcionLastName" type="text" placeholder="Apellido" aria-label="Apellido" required>
                             </div>
-                            <div class="page-footer__content">
-                                <div>
-                                    <input type="email" class="form-box" placeholder="E-mail" aria-label="Email" required>
-                                </div>
+                            <div class="FormBox__container">
+                                <input id="suscripcionMail" type="email" placeholder="E-mail" aria-label="Email" required>
                             </div>
-                            <div class="page-footer__content">
-                                <div>
-                                    <textarea class="form-box" id="TemplateFormControlTextArea" rows="4" placeholder="Cuentanos de tus preferencias" required></textarea>
-                                    <button class="form-button" type="submit">Enviar</button>
-                                </div>
+                            <div class="FormBox__container">                                      
+                                <textarea id="suscripcionComments" rows="4" placeholder="Cuentanos de tus preferencias" required></textarea>    
+                                <button type="submit">Verificar Total</button>                                        
                             </div>
                         </form>
                     </div>
@@ -623,5 +558,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./src/manualslide.js"></script>
     </body>
 </html>

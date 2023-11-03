@@ -6,6 +6,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 0px; width: 0px; position: absolute; overflow: hidden;" aria-hidden="true">
     <defs>
 
+        <path id="list" d="M8 6.00067L21 6.00139M8 12.0007L21 12.0015M8 18.0007L21 18.0015M3.5 6H3.51M3.5 12H3.51M3.5 18H3.51M4 6C4 6.27614 3.77614 6.5 3.5 6.5C3.22386 6.5 3 6.27614 3 6C3 5.72386 3.22386 5.5 3.5 5.5C3.77614 5.5 4 5.72386 4 6ZM4 12C4 12.2761 3.77614 12.5 3.5 12.5C3.22386 12.5 3 12.2761 3 12C3 11.7239 3.22386 11.5 3.5 11.5C3.77614 11.5 4 11.7239 4 12ZM4 18C4 18.2761 3.77614 18.5 3.5 18.5C3.22386 18.5 3 18.2761 3 18C3 17.7239 3.22386 17.5 3.5 17.5C3.77614 17.5 4 17.7239 4 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="location-pin">
+            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <path id="people" clip-rule="evenodd" d="M9 12C10.93 12 12.5 10.43 12.5 8.5C12.5 6.57 10.93 5 9 5C7.07 5 5.5 6.57 5.5 8.5C5.5 10.43 7.07 12 9 12ZM2 17.25C2 14.92 6.66 13.75 9 13.75C11.34 13.75 16 14.92 16 17.25V19H2V17.25ZM9 15.75C7.21 15.75 5.18 16.42 4.34 17H13.66C12.82 16.42 10.79 15.75 9 15.75ZM10.5 8.5C10.5 7.67 9.83 7 9 7C8.17 7 7.5 7.67 7.5 8.5C7.5 9.33 8.17 10 9 10C9.83 10 10.5 9.33 10.5 8.5ZM16.04 13.81C17.2 14.65 18 15.77 18 17.25V19H22V17.25C22 15.23 18.5 14.08 16.04 13.81ZM18.5 8.5C18.5 10.43 16.93 12 15 12C14.46 12 13.96 11.87 13.5 11.65C14.13 10.76 14.5 9.67 14.5 8.5C14.5 7.33 14.13 6.24 13.5 5.35C13.96 5.13 14.46 5 15 5C16.93 5 18.5 6.57 18.5 8.5Z"></path>
+        <path id="tag" d="M28.908 19.576l-9.311 9.311c-0.791 0.791-2.074 0.791-2.865 0l-11.414-11.415-2.82-8.729 2.060-2.060 3.947 3.947c-0.106 0.76 0.124 1.557 0.708 2.141 0.989 0.989 2.592 0.989 3.581 0s0.988-2.592 0-3.581c-0.584-0.584-1.381-0.813-2.141-0.708l-3.947-3.947 2.014-2.015 8.774 2.775 11.414 11.415c0.791 0.792 0.791 2.074 0 2.866zM11.361 11.339c-0.198 0.198-0.518 0.198-0.716 0l-7.879-7.879c-0.198-0.198-0.198-0.519 0-0.716s0.519-0.198 0.716 0l7.878 7.878c0.199 0.198 0.199 0.519 0.001 0.717z"></path>
         <path id="g-Meet" d="M2 18L2 32 12 32 12 18zM39 9v4.31l-10 9V16H14V6h22C37.66 6 39 7.34 39 9zM29 27.69l10 9V41c0 1.66-1.34 3-3 3H14V34h15V27.69zM12 34v10H5c-1.657 0-3-1.343-3-3v-7H12zM12 6L12 16 2 16zM29 25L39 16 39 34zM49 9.25v31.5c0 .87-1.03 1.33-1.67.75L41 35.8V14.2l6.33-5.7C47.97 7.92 49 8.38 49 9.25z"></path>
         <path id="g-Drive" display="inline" d="M243.186,194.343l-81.545,140.386L78.503,477.845L0.5,335.184L162.994,55.463L243.186,194.343z
 		 M345.919,334.198l-159.938,0.466l-82.672,143.181l324.209-0.065L511.5,333.732L345.919,334.198z M499.011,312.436L335.964,34.632
@@ -75,6 +82,28 @@
         <path id="gripper-tiny" d="M3 0a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1zm6 0a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1z"></path>
         <path id="alert-tiny" d="M7 9.993c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004H2.618L6 3.203l3.382 6.79H7zm4.895.555L6.895.51c-.34-.68-1.45-.68-1.79 0l-5 10.038A1.002 1.002 0 0 0 1 12h10a1.002 1.002 0 0 0 .895-1.452zM5 5.978V6.98c0 .554.447 1.004 1 1.004.553 0 1-.45 1-1.004V5.978c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004"></path>
     </defs>
+
+    <symbol id="wds-icons-dev" viewBox="0 0 24 24" fill="none">
+        <path d="M7 8L3 12L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 8L21 12L17 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 4L9.8589 19.4548" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="wds-icons-list" viewBox="0 0 24 24">
+        <use xlink:href="#list" fill-rule="evenodd" fill="transparent"></use>
+    </symbol>
+
+    <symbol id="wds-icons-location-pin" viewBox="0 0 24 24">
+        <use xlink:href="#location-pin" fill-rule="evenodd" fill="transparent"></use>
+    </symbol>
+
+    <symbol id="wds-icons-people" viewBox="0 0 24 24">
+        <use xlink:href="#people" fill-rule="evenodd"></use>
+    </symbol>
+
+    <symbol id="wds-icons-tag" viewBox="0 0 32 32">
+        <use xlink:href="#tag" fill-rule="evenodd"></use>
+    </symbol>
 
     <symbol id="wds-icons-g-meet" viewBox="0 0 50 50">
         <use xlink:href="#g-Meet" fill-rule="evenodd"></use>

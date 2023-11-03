@@ -1,0 +1,284 @@
+.zoomSlides__list {
+    & {
+        padding: 10px; 
+        display: flex; 
+        flex-direction: row; 
+        gap: 10px; 
+        width: 100%; 
+        height: max-content;
+        overflow: visible;
+    }
+    .slideImag {
+        display: inherit;
+        flex-direction: column;
+        border: 2px solid var(--box-border-color); 
+        width: 10%; 
+        height: 400px;
+        overflow: hidden;
+    }
+    .activeImag {
+        width: 80%;
+    }
+}
+
+.infoImag__container {
+    & {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        height: 250px;
+        padding: 20px;
+    }
+    .infoImag__text {
+        & {
+            display: none;
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        & h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & p {
+            margin: 0;
+        }
+    }
+}
+
+.searchbox {
+    & {
+        display: grid;
+        grid-template-columns: 250px auto;
+        margin: 20px;
+    }
+    .searchbox__tittle {
+        & {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            align-items: center;
+        }
+        & h3 {
+            font-size: 20px;
+        }
+    }
+    & hr {
+        margin: 0;
+    }
+}
+
+.searchbox__icon {
+    align-items: center;
+    background-color: transparent;
+    display: inline-grid;
+    height: 30px;
+    justify-items: center;
+    position: relative;
+    width: 30px;
+}
+
+.searchbox__query {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox__selector {
+    font-size: 16px;
+    width: 100%;
+    height: 70%;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.searchbox__list-selection {
+    & {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .searchbox__list-item {
+        font-size: 18px;
+    }
+}
+
+.factureBox {
+    & {
+        margin-top: 20px;
+        height: max-content;
+        padding-bottom: 20px;
+    }
+    & h2 {
+        border-bottom: 2px solid white;
+    }
+    .factureBox__Totals {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 20px;
+        column-gap: 5px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        margin-left: calc(85% - 40px);
+    }
+}
+
+#localValue {
+    margin-right: 20px;
+}
+
+#factureList {
+    & {
+        text-align: start;
+    }
+    & li span {
+        & {
+            margin: 0;
+            display: grid;
+            grid-template-columns: max-content auto max-content;
+        }
+        & p {
+            margin: 5px;
+        }
+    }
+    & hr {
+        border: 0;
+        border-bottom: 2px dotted white;
+        height: 0;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+#factureList__Resume {
+    & {
+        text-align: start;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-top: 15px;
+    }
+    & span {
+        & {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 2px solid white;
+            background-color: var(--page-background-color);
+            margin: 10px;
+        }
+        & p {
+            & {
+                margin: 15px;
+                font-size: 16px
+            }
+            &:first-child {
+                font-weight: bolder;
+                margin-right: 0;
+            } 
+        }
+    }
+}
+
+.resultbox {
+    & {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: linear-gradient(to right, transparent 0%, transparent 49.8%, white 50%, transparent 50.2%, transparent 100%);
+
+    }
+    & div {
+        & {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: max-content;
+        }
+        & img {
+            position: relative;
+            height: 400px;
+            width: 600px;
+        }
+        & div {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow-x: hidden;
+
+        }
+        & div::after {
+            display: flex;
+            position: absolute;
+            content: "";
+            overflow-x: hidden;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, transparent, rgba(78, 66, 61, 1));
+            pointer-events: none;
+        }
+        & h2 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        & p {
+            margin: 5px;
+            text-align: center;
+        }
+
+    }
+}
+
+.factureResume {
+    border-radius: 0.3em;
+    background: var(--box-text-background--url) repeat;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FormBox__container, .FormBox__container-double {
+    & {color: currentColor;}
+    & input::-webkit-calendar-picker-indicator {filter: invert(1);}
+    & input:focus::-webkit-calendar-picker-indicator {filter: invert(0);}
+    & input:invalid {outline-color: red;}
+}
+
+.footerBox {
+    width: 660px;
+    margin-top: 20px;
+    border: 2px solid var(--box-border-color);
+    border-radius: 50px;
+}
+
+.page-footer {
+    & {
+        color: white;
+    }
+    & div {
+        & {
+            margin-bottom: 20px;
+        }
+        & h2 {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+    }
+}

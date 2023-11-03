@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+    <link type="text/css" rel="stylesheet" id="theme-dark-link">
+    <head>
+        <meta charset="UTF-8">
+        <title> Gourmet! | Recetario en la nube </title>
+        <link rel="shortcut icon" type="image/x-icon" href="../resources/icons/CaC-icon.ico" />     
+        <link rel="stylesheet" href="../src/stylesheets/styles.css">
+        <link rel="stylesheet" href="../src/stylesheets/general-styles.css">
+        <link rel="stylesheet" href="../src/stylesheets/one-styles.css">
+    </head>
+    <body>
+        <div class="global-navigation">
+            <div class="global-navigation__top">
+                <nav class="global-navigation__nav" aria-label="Navegación en el sitio">
+                    <a target="_blank" rel="noopener noreferrer" href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" class="global-navigation__logo" label="logo" aria-label="Aulas virtuales del curso">
+                        <img src="../resources/imgs/CaC-logo.png" width="60px" height="28px">
+                        <span> « CaC » </span>
+                    </a>
+                    <a href="" class="global-navigation__icon" title="Buscar">
+                        <svg class="icon">
+                            <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-magnifying-glass" />
+                        </svg>
+                    </a>
+                    <div class="global-navigation__links">
+                        <a target="_blank" rel="noopener noreferrer" href="https://meet.google.com/woh-kgvq-ftc" class="global-navigation__link">
+                            <span class="global-navigation__icon has-background">
+                                <svg class="icon">
+                                    <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-g-meet"/>
+                                </svg>
+                            </span>
+                            <span class="global-navigation__label">Curso</span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1Iv_z7TY5NEblnPsQuxQBK_PQ0OjvVq_E" class="global-navigation__link">
+                            <span class="global-navigation__icon has-background">
+                                <svg class="icon">
+                                    <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-g-drive"/>
+                                </svg>
+                            </span>
+                            <span class="global-navigation__label">Recursos</span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLMBLJyhQOSWxHBYa2Nyki0bGPK4hb3J2g" class="global-navigation__link">
+                            <span class="global-navigation__icon has-background">
+                                <svg class="icon">
+                                    <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-tele"/>
+                                </svg>
+                            </span>
+                            <span class="global-navigation__label">Playlist de Youtube</span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/codoacodooficial/" class="global-navigation__link" label="Facebook Oficil">
+                            <span class="global-navigation__icon has-background">
+                                <svg class="icon">
+                                    <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-facebook" />
+                                </svg>
+                            </span>
+                            <span class="global-navigation__label">Redes Sociales</span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://aulasvirtuales.bue.edu.ar/my/" class="global-navigation__link" label="Aulas Virtuales">
+                            <span class="global-navigation__icon has-background">
+                                <svg class="icon">
+                                    <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-bookyy" />
+                                </svg>
+                            </span>
+                            <span class="global-navigation__label">Aulas Virtuales</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="global-navigation__bottom">
+                <div class="dropdown open-to-right is-attached-to-bottom">
+                    <div class="dropdown__toggle">
+                        <div class="global-navigation__icon">
+                            <svg class="icon" color="var(--global-text-color)">
+                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-list" />
+                            </svg>
+                       </div>
+                    </div>
+                    <div class="dropdown__content">
+                        <ul class="list is-linked">
+                            <li>
+                                <a><span style="font-weight: 1000;">AAAA-1111</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">BBBB-2222</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">CCCC-3333</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">DDDD-4444</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">EEEE-5555</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">FFFF-6666</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">GGGG-7777</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">HHHH-8888</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown open-to-right is-attached-to-bottom">
+                    <div class="dropdown__toggle">
+                        <div class="global-navigation__icon">
+                            <svg class="icon" color="var(--global-text-color)">
+                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-dev" />
+                            </svg>
+                       </div>
+                    </div>
+                    <div class="dropdown__content">
+                        <ul class="list is-linked">
+                            <li>
+                                <a onclick="name__Val()"><span style="font-weight: 1000;">DEV: Validar nombre</span></a>
+                            </li>
+                            <li>
+                                <a onclick="lastName__Val()"><span style="font-weight: 1000;">DEV: Validar apellido</span></a>
+                            </li>
+                            <li>
+                                <a onclick="mail__Val()"><span style="font-weight: 1000;">DEV: Validar correo</span></a>
+                            </li>
+                            <li>
+                                <a onclick="code__Val()"><span style="font-weight: 1000;">DEV: Validar codigo de promocion</span></a>
+                            </li>
+                            <li>
+                                <a onclick="locateRestaurants()"><span style="font-weight: 1000;">DEV: Validar ubicacion</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown open-to-right is-attached-to-bottom">
+                    <div class="dropdown__toggle">
+                        <div class="global-navigation__icon">
+                            <div class="avatar">
+                                <img src="../resources/imgs/avatar_alumn.jpg" title="Alumno" class="avatar__imag">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown__content">
+                        <ul class="list is-linked">
+                            <li>
+                                <a><span style="font-weight: 1000;">Programa Codo a Codo 2023</span></a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">CaC Comision: </span>23548</a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">Alumno: </span>Miguel E. Diaz G.</a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">DNI: </span>95.887.973</a>
+                            </li>
+                            <li>
+                                <a><span style="font-weight: 1000;">E-mail de contacto: </span>walther22wolff.gedler@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="page-header__background cover" style="--image-ratio:1"></div>
+            <div class="container">
+                <div class="header-wrapper">
+                    <header class="community-header">
+                        <a href="./index.html" class="community-header__image">
+                            <img src="../resources/imgs/Logo-Management-Gourmet.png" width="115" height="65" alt="Gourmet Page">
+                        </a>
+                        <div class="community-header__top-container">
+                            <div class="community-header__name-wrapper">
+                                <a href="./index.html" class="community-header__name"> Gourmet! Tu recetario en la nube </a>
+                            </div>
+                            <div class="recipe-counter">
+                                <div class="recipe-counter__value">548</div>
+                                <div class="recipe-counter__label">recetas</div>
+                            </div>
+                        </div>
+                        <nav class="community-header__local-navigation">
+                            <ul class="tabs">
+                                <li id="tab_1" class="specialText-New">
+                                    <div class="tabs__tab-label dropdown__toggle">
+                                        <a href="#">
+                                            <svg class="icon-tiny icon">
+                                                <use href="../resources/Hurtado-IconSet-1.svg#wds-icons-book-tiny" />
+                                            </svg>
+                                            <span style="color: var(--global-nav-link-color);">Rentar para eventos</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li id="tab_2" class="dropdown">
+                                    <div class="tabs__tab-label dropdown__toggle">
+                                        <a href="#">
+                                            <span>Alimentos y Nutricion</span>
+                                        </a>
+                                        <svg class="icon icon-tiny dropdown__toggle-chevron">
+                                            <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                        </svg>
+                                    </div>
+                                    <div class="is-not-scrollable dropdown__content">
+                                        <ul class="list is-linked">
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.unicef.org/lac/crianza/alimento-y-nutricion">
+                                                    <span>Recursos de 'UNICEF'</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://medlineplus.gov/spanish/foodandnutrition.html">
+                                                    <span>Recursos de 'MedLine Plus'</span>
+                                                </a>
+                                            </li> 
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/alimentacion-nutricion">
+                                                    <span>Recursos del 'NIH'</span>
+                                                </a>
+                                            </li>    
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.argentina.gob.ar/salud/alimentacion-saludable">
+                                                    <span>Recursos del Minisiterio de Salud de Argentina</span>
+                                                </a>
+                                            </li>                                                                                                                                     
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="tab_3" class="dropdown">
+                                    <div class="tabs__tab-label dropdown__toggle">
+                                        <a href="#">
+                                            <span>Alimentos y Ejercicio</span>
+                                        </a>
+                                        <svg class="icon icon-tiny dropdown__toggle-chevron">
+                                            <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                        </svg>
+                                    </div>
+                                    <div class="is-not-scrollable dropdown__content">
+                                        <ul class="list is-linked">
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://dietas.guiafitness.com/">
+                                                    <span>Guia Fitness</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.entrenamiento.com/">
+                                                    <span>Entrenamientos variados</span>
+                                                </a>
+                                            </li>  
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://instafit.com/">
+                                                    <span>Disciplinas Atleticas</span>
+                                                </a>
+                                            </li>                                                                                       
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="tab_4" class="dropdown">
+                                    <div class="tabs__tab-label dropdown__toggle">
+                                        <a href="#">
+                                            <span>Alimentos y Salud</span>
+                                        </a>
+                                        <svg class="icon icon-tiny dropdown__toggle-chevron">
+                                            <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-dropdown-tiny" />
+                                        </svg>
+                                    </div>
+                                    <div class="is-not-scrollable dropdown__content">
+                                        <ul class="list is-linked">
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://www.midietacojea.com/">
+                                                    <span>Blog de dietas y nutricion</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://adelgazarysalud.online/">
+                                                    <span>Blog de salud y alimentacion</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="https://estilosdevidasaludable.sanidad.gob.es/alimentacionSaludable/home.htm">
+                                                    <span>Blog de estilos de vida</span>
+                                                </a>
+                                            </li>                                                                                                                                  
+                                        </ul>
+                                    </div>                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="page">
+                    <main class="page__main" lang="es">
+                        <div class="page-header">
+                            <div class="page-header__bottom">
+                                <div class="page-header__title-wrapper">
+                                    <h1 class="page-header__title"> Rentar locales para eventos </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content" class="page-content">
+                            <div class="box">
+                                <div class="box-header">
+                                    <span class="box-text">Eventos destacados</span>
+                                </div>
+                                <div class="zoomSlides__list">
+                                    <div onmouseover="currentImag(1)" onclick="currentImag(1)" class="slideImag">
+                                        <img src="../resources/imgs/events/casual_event.jpg" decoding="async" loading="lazy" width="700px" height="400px" data-relevant="1">
+                                    </div>
+                                    <div onmouseover="currentImag(2)" onclick="currentImag(2)" class="slideImag">
+                                        <img src="../resources/imgs/events/corporative_event.jpg" decoding="async" loading="lazy" width="700px" height="400px" data-relevant="1">
+                                    </div>
+                                    <div onmouseover="currentImag(3)" onclick="currentImag(3)" class="slideImag">
+                                        <img src="../resources/imgs/events/kid_event.jpeg" decoding="async" loading="lazy" width="700px" height="400px" data-relevant="1">
+                                    </div>
+                                    <div onmouseover="currentImag(4)" onclick="currentImag(4)" class="slideImag">
+                                        <img src="../resources/imgs/events/party_event.jpg" decoding="async" loading="lazy" width="700px" height="400px" data-relevant="1">
+                                    </div>
+                                    <div onmouseover="currentImag(5)" onclick="currentImag(5)" class="slideImag">
+                                        <img src="../resources/imgs/events/wedding_event.jpg" decoding="async" loading="lazy" width="700px" height="400px" data-relevant="1">
+                                    </div>
+                                </div>
+                                <div class="infoImag__container">
+                                    <div class="infoImag__text" data-relevant="1">
+                                        <h3>Eventos Casuales</h3>
+                                        <p>Nuestro restaurante es el lugar ideal para organizar reuniones informales y puntos de encuentro social. Nos enorgullece ofrecer un ambiente cálido y acogedor que te hará sentir como en casa. Nuestro espacio ha sido diseñado pensando en la comodidad de nuestros clientes, con una decoración cuidadosamente seleccionada y una iluminación ambiental que crea una atmósfera relajante y agradable. Ya sea que estés buscando un lugar para charlar, disfrutar de una comida informal o tomar unas copas con amigos, te garantizamos un ambiente agradable y acogedor.</p>                                                                            
+                                    </div>
+                                    <div class="infoImag__text" data-relevant="1">
+                                        <h3>Eventos Corporativos</h3>
+                                        <p>Nuestro restaurante es el lugar ideal para organizar tus reuniones corporativas y eventos empresariales. Con una amplia variedad de ambientes diseñados específicamente para satisfacer las necesidades de tu empresa, te ofrecemos un espacio profesional y acogedor para llevar a cabo tus reuniones de negocios. Contamos con salas de reuniones elegantes y bien equipadas que crean el entorno perfecto para discusiones de negocios productivas y decisiones empresariales importantes. Nuestro equipo altamente capacitado y atento está comprometido en brindarte un servicio de primera clase. Desde la planificación inicial hasta la ejecución del evento, nos aseguramos de que cada detalle sea cuidado y de que tus necesidades y las de tus invitados sean atendidas de manera impecable.</p>                                        
+                                    </div>
+                                    <div class="infoImag__text" data-relevant="1">
+                                        <h3>Eventos Infantiles</h3>
+                                        <p>Nuestro equipo altamente capacitado se dedica a brindar una experiencia excepcional tanto para los niños como para los padres. Desde la decoración temática hasta el entretenimiento, nos aseguramos de que cada detalle esté cuidadosamente planificado para garantizar una celebración llena de diversión y alegría. Los padres pueden relajarse y disfrutar de la fiesta mientras nuestros profesionales se encargan de todo. Contamos con una variedad de espacios versátiles que se adaptan perfectamente a las necesidades de una fiesta infantil. Ya sea que estés planeando una fiesta pequeña e íntima o una celebración más grande, tenemos el espacio ideal para ti. Nuestras instalaciones están diseñadas pensando en los niños, con áreas de juego seguras y emocionantes que los mantendrán entretenidos durante toda la celebración.</p>
+                                    </div>
+                                    <div class="infoImag__text" data-relevant="1">
+                                        <h3>Reuniones Festivas</h3>
+                                        <p>Nuestro club nocturno ofrece un ambiente exclusivo y elegante que crea la atmósfera perfecta para tus fiestas privadas. Con una temática cuidadosamente seleccionada, combinamos elementos de estilo y sofisticación para que tú y tus invitados se sientan como en un lugar único y especial. Nuestra amplia pista de baile es el corazón de la diversión en nuestro club. Con un sistema de sonido de vanguardia y una iluminación cautivadora, te ofrecemos el espacio perfecto para bailar y disfrutar de la música durante tu fiesta privada. Ya sea que prefieras los ritmos animados o los sonidos más relajados, nuestra pista de baile se adapta a todos los estilos y gustos. Nuestro dedicado equipo de profesionales está comprometido en brindarte un servicio de primera clase. Desde el momento en que contactas con nosotros hasta el final de tu fiesta privada, nos aseguramos de que cada detalle sea atendido y de que tú y tus invitados reciban una atención personalizada y amable.</p>
+                                    </div>
+                                    <div class="infoImag__text" data-relevant="1">
+                                        <h3>Bodas y Matrimonios</h3>
+                                        <p>Nuestro restaurante ofrece el escenario de ensueño para tu boda, con una atmósfera íntima y encantadora que hará que tu día sea realmente inolvidable. Desde la ceremonia hasta la recepción, nos encargaremos de cada detalle para que puedas disfrutar de tu día al máximo. En nuestro restaurante, nos enorgullece brindar un servicio personalizado y una atención impecable al detalle. Nuestro equipo de planificación de bodas estará a tu disposición para ayudarte en cada paso del camino, desde la selección de menús y decoraciones hasta la coordinación de servicios adicionales, como música y fotografía. Nos ocuparemos de todos los detalles para que tú y tus seres queridos puedan disfrutar de un día sin preocupaciones.</p>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <div class="box-header">
+                                    <span class="box-text">Busqueda</span>
+                                </div>
+                                <div class="searchbox">
+                                    <div class="searchbox__tittle">
+                                        <span class="searchbox__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-tag"/>
+                                            </svg>
+                                        </span>
+                                        <h3>Tipo de evento</h3>
+                                    </div>
+                                    <div class="searchbox__query">
+                                        <select name="Seleccion de evento" class="searchbox__selector" id="eventTypes">
+                                            <option value="0">No estoy segur@...</option>
+                                            <option value="boda">Boda</option>
+                                            <option value="celebracion familiar">Celebracion familiar</option>
+                                            <option value="cena">Cena / Comida</option>
+                                            <option value="conferencia">Conferencia / Formacion</option>
+                                            <option value="corporativo">Evento corporativo</option>
+                                            <option value="fiesta infantil">Fiesta infantil</option>
+                                            <option value="fiesta empresarial">Fiesta empresarial</option>
+                                            <option value="fiesta">Fiesta</option>
+                                            <option value="reunion">Reunion / Workshop</option>
+                                            <option value="recreativo">Team building / Recreacion</option>
+                                        </select>
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="searchbox__tittle">
+                                        <span class="searchbox__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-people"/>
+                                            </svg>
+                                        </span>
+                                        <h3>Numero de personas</h3>
+                                    </div>
+                                    <div class="searchbox__query">
+                                        <input class="searchbox__selector" id="people" type="number" min="1" max="1000" placeholder="No estoy segur@...">
+                                        <select class="searchbox__selector" id="people-filter-select">
+                                            <option value="chairPerson">Sentadas</option>
+                                            <option value="notChair">De pie</option>
+                                        </select>
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="searchbox__tittle">
+                                        <span class="searchbox__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-location-pin"/>
+                                            </svg>
+                                        </span>
+                                        <h3>Ubicacion</h3>
+                                    </div>
+                                    <div class="searchbox__query">
+                                        <select name="Seleccion de ubicacion" class="searchbox__selector" id="location">
+                                            <option value="1">Buenos Aires</option>
+                                            <option value="2">Entre Rios</option>
+                                            <option value="3">Cordoba</option>
+                                            <option value="4">Mendoza</option>
+                                            <option value="5">La Pampa</option>
+                                            <option value="6">La Rioja</option>
+                                            <option value="7">San Juan</option>
+                                            <option value="8">Santiago del Estero</option>
+                                            <option value="9">Formosa</option>
+                                            <option value="10">Corrientes</option>
+                                        </select>
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="searchbox__tittle">
+                                        <span class="searchbox__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="../resources/Hurtado-IconSet-1.svg#wds-icons-list"/>
+                                            </svg>
+                                        </span>
+                                        <h3>Criterios adicionales</h3>
+                                    </div>
+                                    <div class="searchbox__list-selection">
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="bringFood">
+                                            <span>Puedo llevar comida</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="coffeeBreak">
+                                            <span>Servicio "coffee break"</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="musicOK">
+                                            <span>Permitido musica a alto volumen</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="bringDrink">
+                                            <span>Puedo llevar alcohol</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="wifi">
+                                            <span>Wi-Fi</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="dancingFloor">
+                                            <span>Posibilidad de bailar</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="photo">
+                                            <span>Con equipo fotografico</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="screen">
+                                            <span>Proyector / Pantalla</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="pool">
+                                            <span>Piscina</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="clothing">
+                                            <span>Con alquiler de atuendos</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="soundSystem">
+                                            <span>Sistema de sonido</span>
+                                        </label>
+                                        <label class="searchbox__list-item">
+                                            <input type="checkbox" name="check" value="rooms">
+                                            <span>Alojamiento</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <div class="box-header">
+                                    <span class="box-text">Coincidencias y factura</span>
+                                </div>
+                                <div class="resultbox" id="restaurant-result"></div>
+                                <hr>
+                                <div class="PerBox factureBox">
+                                    <h2>Factura Expandida</h2>
+                                    <ul id="factureList">
+                                    </ul>
+                                    <span class="factureBox__Totals"><h3>Total:</h3><h3 id="valueTotals">00000,00</h3></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="box">
+                                <div class="box-header">
+                                    <span class="box-text">Reserva</span>
+                                </div>
+                                <form class="FormBox">
+                                    <div class="FormBox__container-double">
+                                        <input id="factureName" type="text" placeholder="Nombre" aria-label="Nombre" required oninvalid="name__Val()">
+                                        <input id="factureLastName" type="text" placeholder="Apellido" aria-label="Apellido" required oninvalid="lastName__Val()">
+                                    </div>
+                                    <div class="FormBox__container-double">
+                                        <input id="promotionCode" pattern="[A-Z]{4}-[1-9]{4}" type="text" placeholder="Codigo de promocion" aria-label="Codigo de promocion" oninvalid="code__Val()">
+                                        <input id="factureDate" type="date" placeholder="Fecha de reserva" aria-label="Date" max="2030-12-31">
+                                    </div>
+                                    <div class="FormBox__container">
+                                        <input id="factureMail" type="email" placeholder="E-mail" aria-label="Email" required oninvalid="mail__Val()">
+                                        <div class="PerBox factureBox">
+                                            <h2 id="resumeTittle">Resumen de Factura</h2>
+                                            <div id="factureList__Resume"></div>
+                                        </div>
+                                    </div>
+                                    <div class="FormBox__container-double">                                      
+                                        <button type="button" onclick="cleanAll()">Borrar</button>     
+                                        <button type="button" onclick="getTotal()">Verificar Total</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="page-footer">
+                    <div>
+                        <h2>Recetas recomendadas para revisar</h2>
+                        <div class="footerBox">
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/flan-casero-clasico/13997"><img src=" ../resources/imgs/Paulina_Cocina/recipe1.jpg" title="Flan casero clasico" class="article-thumb__img"></a>
+                            </div>
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/galletas-de-avena-faciles/7942"><img src="../resources/imgs/Paulina_Cocina/recipe2.jpg" title="Galletas de avena" class="article-thumb__img"></a>
+                            </div>    
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/mochi-japones/32762"><img src="../resources/imgs/Paulina_Cocina/recipe3.jpg" title="Mochi japones" class="article-thumb__img"></a>
+                            </div>   
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/natillas-caseras-tradicionales/32595"><img src="../resources/imgs/Paulina_Cocina/recipe4.jpg" title="Natilla casera" class="article-thumb__img"></a>
+                            </div>   
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tocino-de-cielo/32402"><img src="../resources/imgs/Paulina_Cocina/recipe5.jpg" title="Tocino de cielo" class="article-thumb__img"></a>
+                            </div>   
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/milhojas-de-crema-pastelera/32070"><img src="../resources/imgs/Paulina_Cocina/recipe6.jpg" title="Milhojas de crema pastelera" class="article-thumb__img"></a>
+                            </div>   
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tarta-san-marcos/32112"><img src="../resources/imgs/Paulina_Cocina/recipe7.jpg" title="Tarta 'San Marcos'" class="article-thumb__img"></a>
+                            </div> 
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/dulce-de-membrillo/31919"><img src="../resources/imgs/Paulina_Cocina/recipe8.jpg" title="Dulce de membrillo" class="article-thumb__img"></a>
+                            </div> 
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/banana-bread/31680"><img src="../resources/imgs/Paulina_Cocina/recipe9.jpg" title="Pan de banana" class="article-thumb__img"></a>
+                            </div>                                        
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/bunuelos-mexicanos-caseros/31492"><img src="../resources/imgs/Paulina_Cocina/recipe10.jpg" title="Buñuelos Mexicanos" class="article-thumb__img"></a>
+                            </div>                                        
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/gelatina-de-mosaico/31074"><img src="../resources/imgs/Paulina_Cocina/recipe11.jpg" title="Gelatina de mosaico" class="article-thumb__img"></a>
+                            </div>                                        
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/ensalada-de-manzana/31068"><img src="../resources/imgs/Paulina_Cocina/recipe12.jpg" title="Ensalada de manzana" class="article-thumb__img"></a>
+                            </div>                                        
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/bombon-suizo-torta-receta-facil/30984"><img src="../resources/imgs/Paulina_Cocina/recipe13.jpg" title="Bombon Suizo" class="article-thumb__img"></a>
+                            </div>          
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/receta-flan-de-queso-philadelphia-horno/30851"><img src="../resources/imgs/Paulina_Cocina/recipe14.jpg" title="Flan de queso" class="article-thumb__img"></a>
+                            </div>                                       
+                            
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/tarta-de-queso-sin-horno/30751"><img src="../resources/imgs/Paulina_Cocina/recipe15.jpg" title="Tarta de queso" class="article-thumb__img"></a>
+                            </div>                                        
+
+                            <div class="article-thumb">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.paulinacocina.net/pan-brioche-super-esponjoso/30306"><img src="../resources/imgs/Paulina_Cocina/recipe16.jpg" title="Pan 'Brioche'" class="article-thumb__img"></a>
+                            </div>                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="global-footer">
+                <div class="global-footer__content">
+                    <a href="" class="box-content__link" style="font-size: 18px; text-align: center;">Preguntas frecuentes</a>
+                    <a href="" class="box-content__link" style="font-size: 18px; text-align: center;">Conferencias sobre nutricion</a>
+                    <a href="" class="box-content__link" style="font-size: 18px; text-align: center;">Talleres de tratamiento de alimentos</a>
+                    <a href="" class="box-content__link" style="font-size: 18px; text-align: center;">Obtencion de ingredientes</a>
+                </div>
+            </footer>
+        </div>
+        <script src="../src/zoom-slide.js"></script>
+        <script src="../src/searcher.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                document.getElementById("factureDate").valueAsDate = new Date();
+            });
+        </script>
+    </body>
+</html>
